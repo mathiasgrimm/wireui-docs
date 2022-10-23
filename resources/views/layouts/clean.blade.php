@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Styles -->
+    <wireui:external />
     <livewire:styles />
     <link rel="stylesheet" href="{{ mix('dist/app.css') }}">
 
@@ -28,7 +29,7 @@
     @stack('styles')
 </head>
 
-<body class="font-sans overflow-y-scroll min-h-screen bg-slate-100 dark:bg-secondary-800">
+<body class="min-h-screen overflow-y-scroll font-sans bg-slate-100 dark:bg-secondary-800">
     <x-notifications />
     <x-dialog />
 

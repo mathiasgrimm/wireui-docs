@@ -44,6 +44,7 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('toggle', Documentation\Toggle::class)->name('toggle');
     Route::get('checkbox', Documentation\Checkbox::class)->name('checkbox');
     Route::get('radio', Documentation\Radio::class)->name('radio');
+    Route::get('slider', Documentation\SliderInput::class)->name('slider');
     Route::get('modal', Documentation\Modal::class)->name('modal');
     Route::get('dialogs', Documentation\Dialogs::class)->name('dialogs');
     Route::get('textarea', Documentation\Textarea::class)->name('textarea');

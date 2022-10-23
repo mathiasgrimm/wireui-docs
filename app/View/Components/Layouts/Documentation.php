@@ -83,6 +83,10 @@ class Documentation extends Component
                 'route' => route('docs.radio'),
             ],
             [
+                'label' => 'Slider',
+                'route' => route('docs.slider'),
+            ],
+            [
                 'header' => 'Table',
                 'label'  => 'PowerGrid',
                 'route'  => 'https://github.com/Power-Components/livewire-powergrid',
