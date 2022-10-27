@@ -19,7 +19,7 @@
         </x-summary>
     </x-slot>
 
-    <div>
+    <div id="sliders">
         <x-section.title title="Sliders" />
 
         <div class="mt-5 prose text-gray-500 xl:max-w-4xl xl:mb-8 dark:text-gray-400">
@@ -33,18 +33,16 @@
         </div>
     </div>
 
-    <div class="space-y-4">
-        <x-code-preview
-            title="Simple Slider"
-            href="#simple-slider"
-            id="simple-slider"
-            language="blade"
-            :code="$simpleSliderExample">
-            <div class="max-w-sm mx-auto">
-                <x-inputs.slider label="Inform Percent" />
-            </div>
-        </x-code-preview>
-    </div>
+    <x-code-preview
+        title="Simple Slider"
+        href="#simple-slider"
+        id="simple-slider"
+        language="blade"
+        :code="$simpleSliderExample">
+        <div class="max-w-sm mx-auto">
+            <x-inputs.slider label="Inform Percent" />
+        </div>
+    </x-code-preview>
 
     <x-code-preview
         title="Slider Hint"
@@ -74,7 +72,9 @@
         id="slider-min-max"
         language="blade"
         :code="$minMaxSliderExample">
-        <div class="max-w-sm mx-auto">
+        <div class="max-w-sm mx-auto space-y-4">
+            <x-inputs.number wire:model="value" label="Number" min="0" max="1" step="0.1" />
+
             <x-inputs.slider wire:model="value" label="With Min and Max" min="0" max="1" step="0.1" />
         </div>
     </x-code-preview>
@@ -86,9 +86,9 @@
         language="blade"
         :code="$tooltipSliderExample">
         <div class="max-w-sm mx-auto">
-            <x-button class="mb-4" :label="$valueTooltip" />
+            <x-button class="mb-4" :label="$tooltip" />
 
-            <x-inputs.slider wire:model="valueTooltip" label="Without Tooltip" step="5" hide-tooltip />
+            <x-inputs.slider wire:model="tooltip" label="Without Tooltip" step="25" hide-tooltip />
         </div>
     </x-code-preview>
 
@@ -110,11 +110,11 @@
         language="blade"
         :code="$sizesSliderExample">
         <div class="max-w-sm mx-auto">
-            <x-inputs.slider label="Default Size" step="15" />
+            <x-inputs.slider label="Default Size" step="15" show-stops />
 
-            <x-inputs.slider md label="Medium Size" step="15" />
+            <x-inputs.slider md label="Medium Size" step="15" show-stops />
 
-            <x-inputs.slider lg label="Large Size" step="15" />
+            <x-inputs.slider lg label="Large Size" step="15" show-stops />
         </div>
     </x-code-preview>
 
@@ -136,12 +136,15 @@
         :code="$rangeSliderExample">
         <div class="max-w-sm mx-auto">
             <div class="flex justify-between mb-4">
-                <x-button :label="$value_min" />
+                <x-button :label="$values[0]" />
 
-                <x-button :label="$value_max" />
+                <x-button :label="$values[1]" />
             </div>
 
-            <x-inputs.slider range wire:model="value" label="Set the Percent" step="10" show-stops />
+            <x-inputs.slider range label="Set the Percent" step="10" show-stops>
+                <x-slot:min wire:model="values.0"></x-slot:min>
+                <x-slot:max wire:model="values.1"></x-slot:max>
+            </x-inputs.slider>
         </div>
     </x-code-preview>
 
@@ -156,11 +159,12 @@
             <x-option-table-row prop="max"  required="false" default="100" type="int|float|double" />
             <x-option-table-row prop="step" required="false" default="1"   type="int|float|double" />
 
+            <x-option-table-row prop="errorless"    required="false" default="false" type="boolean" />
             <x-option-table-row prop="hide-tooltip" required="false" default="false" type="boolean" />
             <x-option-table-row prop="show-stops"   required="false" default="false" type="boolean" />
 
-            <x-option-table-row prop="names"  required="false" default="[]" type="array" />
-            <x-option-table-row prop="values" required="false" default="[]" type="array" />
+            <x-option-table-row prop="min"  required="true if range" default="none" type="slot" />
+            <x-option-table-row prop="max"  required="true if range" default="none" type="slot" />
         </x-options-table>
     </div>
 </div>
