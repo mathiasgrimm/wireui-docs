@@ -45,6 +45,20 @@ class SliderInput extends Component
     <x-inputs.slider label="With Stops" step="20" show-stops />
     HTML;
 
+    public string $customStopsSliderExample = <<<HTML
+    <x-inputs.slider label="Inform Percent" :stops="[25, 50, 75]" />
+
+    <x-inputs.slider label="Inform Percent" :stops="['25%' => 25, '50%' => 50, '75%' => 75]" />
+
+    <x-inputs.slider label="Inform Percent" :stops="[
+        ['value' => 0, 'label' => '0%'],
+        ['value' => 25, 'label' => '25%'],
+        ['value' => 50, 'label' => '50%'],
+        ['value' => 75, 'label' => '75%'],
+        ['value' => 100, 'label' => '100%'],
+    ]" />
+    HTML;
+
     public string $sizesSliderExample = <<<HTML
     <x-inputs.slider label="Default Size" step="15" show-stops />
 

@@ -104,6 +104,27 @@
     </x-code-preview>
 
     <x-code-preview
+        title="Slider with Custom Stops"
+        href="#slider-custom-stops"
+        id="slider-custom-stops"
+        language="blade"
+        :code="$customStopsSliderExample">
+        <div class="max-w-sm mx-auto">
+            <x-inputs.slider label="Inform Percent" :stops="[25, 50, 75]" />
+
+            <x-inputs.slider label="Inform Percent" :stops="['25%' => 25, '50%' => 50, '75%' => 75]" />
+
+            <x-inputs.slider label="Inform Percent" :stops="[
+                ['value' => 0, 'label' => '0%'],
+                ['value' => 25, 'label' => '25%'],
+                ['value' => 50, 'label' => '50%'],
+                ['value' => 75, 'label' => '75%'],
+                ['value' => 100, 'label' => '100%'],
+            ]" />
+        </div>
+    </x-code-preview>
+
+    <x-code-preview
         title="Slider Sizes"
         href="#slider-sizes"
         id="slider-sizes"
