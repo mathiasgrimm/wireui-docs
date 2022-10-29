@@ -14,13 +14,13 @@
         "php": "^8.1",
         "fruitcake/laravel-cors": "^2.2",
         "guzzlehttp/guzzle": "^7.5",
-        "laravel/framework": "^9.33",
+        "laravel/framework": "^9.36",
         "laravel/sanctum": "^2.15",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
         "sentry/sentry-laravel": "^2.13",
         "torchlight/torchlight-laravel": "^0.5.11",
-        "wireui/wireui": "^1.16"
+        "wireui/wireui": "2.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.20",
@@ -77,5 +77,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "wireui/wireui": {
+            "type": "path",
+            "url": "../wireui"
+        }
+    }
 }

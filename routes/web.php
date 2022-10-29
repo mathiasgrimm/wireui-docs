@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Livewire\{Dev, Documentation, Home};
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Benchmark;
+use Illuminate\Support\Facades\{Auth, Route};
 
 /*
 |--------------------------------------------------------------------------
@@ -50,4 +51,15 @@ Route::name('docs.')->prefix('docs')->group(function () {
     Route::get('customization', Documentation\Customization::class)->name('customization');
     Route::get('contributing', Documentation\Contributing::class)->name('contributing');
     Route::get('livewire-usage', Documentation\LivewireUsage::class)->name('livewire-usage');
+});
+
+Route::get('foo', function () {
+    // Auth::loginUsingId(1);
+
+    Benchmark::dd([
+        'facade'    => fn () => Auth::user(),
+        'helper'    => fn () => auth()->user(),
+        'container' => fn () => app('auth')->user(),
+        'request'   => fn () => request()->user(),
+    ]);
 });

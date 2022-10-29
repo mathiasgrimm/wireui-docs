@@ -37,6 +37,12 @@
         id="async-search"
         language="html"
         :code="$asyncSearch">
+        <x-button wire:click="$set('asyncSearchUser', [{{ rand(1, 10) }}, {{ rand(1, 10) }}])">
+            change 1-10
+        </x-button>
+        <x-button wire:click="$set('asyncSearchUser', [{{ rand(11, 20) }}, {{ rand(11, 20) }}])">
+            change 11-20
+        </x-button>
         <x-select
             class="sm:max-w-xs"
             label="Search a User"
@@ -45,6 +51,7 @@
             :async-data="route('api.users.index')"
             option-label="name"
             option-value="id"
+            {{-- multiselect --}}
         />
     </x-code-preview>
 
@@ -157,6 +164,13 @@
                 ['name' => 'Pending', 'id' => 2],
                 ['name' => 'Stuck',   'id' => 3],
                 ['name' => 'Done',    'id' => 4],
+                ['name' => 'Done 5',    'id' => 5],
+                ['name' => 'Done 6',    'id' => 6],
+                ['name' => 'Done 7',    'id' => 7],
+                ['name' => 'Done 8',    'id' => 8],
+                ['name' => 'Done 9',    'id' => 9],
+                ['name' => 'Done 10',    'id' => 10],
+                ['name' => 'Done 11',    'id' => 11],
             ]"
             option-label="name"
             option-value="id"

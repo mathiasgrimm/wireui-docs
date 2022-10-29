@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Documentation;
 
+use App\View\Components\Layouts\Clean;
 use App\View\Components\Layouts\Documentation;
 use Livewire\Component;
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eedd46407b52ebc94c3ccaf93429c93c",
+    "content-hash": "3ba39e1546dbadfc58532c45a59df145",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1217,26 +1217,26 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.33.0",
+            "version": "v9.36.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "13665b7e15dbcbecb3651acc19ba8818da6fa0a9"
+                "reference": "80ba0561b3682b96743e1c152fde0698bbdb2412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/13665b7e15dbcbecb3651acc19ba8818da6fa0a9",
-                "reference": "13665b7e15dbcbecb3651acc19ba8818da6fa0a9",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/80ba0561b3682b96743e1c152fde0698bbdb2412",
+                "reference": "80ba0561b3682b96743e1c152fde0698bbdb2412",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^2.0",
-                "dragonmantank/cron-expression": "^3.1",
-                "egulias/email-validator": "^3.1",
+                "dragonmantank/cron-expression": "^3.3.2",
+                "egulias/email-validator": "^3.2.1",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "fruitcake/php-cors": "^1.2",
-                "laravel/serializable-closure": "^1.0",
+                "laravel/serializable-closure": "^1.2.2",
                 "league/commonmark": "^2.2",
                 "league/flysystem": "^3.0.16",
                 "monolog/monolog": "^2.0",
@@ -1247,7 +1247,7 @@
                 "psr/log": "^1.0|^2.0|^3.0",
                 "psr/simple-cache": "^1.0|^2.0|^3.0",
                 "ramsey/uuid": "^4.2.2",
-                "symfony/console": "^6.0.3",
+                "symfony/console": "^6.0.9",
                 "symfony/error-handler": "^6.0",
                 "symfony/finder": "^6.0",
                 "symfony/http-foundation": "^6.0",
@@ -1258,7 +1258,7 @@
                 "symfony/routing": "^6.0",
                 "symfony/uid": "^6.0",
                 "symfony/var-dumper": "^6.0",
-                "tijsverkoyen/css-to-inline-styles": "^2.2.2",
+                "tijsverkoyen/css-to-inline-styles": "^2.2.5",
                 "vlucas/phpdotenv": "^5.4.1",
                 "voku/portable-ascii": "^2.0"
             },
@@ -1305,26 +1305,26 @@
             },
             "require-dev": {
                 "ably/ably-php": "^1.0",
-                "aws/aws-sdk-php": "^3.198.1",
+                "aws/aws-sdk-php": "^3.235.5",
                 "doctrine/dbal": "^2.13.3|^3.1.4",
                 "fakerphp/faker": "^1.9.2",
-                "guzzlehttp/guzzle": "^7.2",
+                "guzzlehttp/guzzle": "^7.5",
                 "league/flysystem-aws-s3-v3": "^3.0",
                 "league/flysystem-ftp": "^3.0",
                 "league/flysystem-path-prefixing": "^3.3",
                 "league/flysystem-read-only": "^3.3",
                 "league/flysystem-sftp-v3": "^3.0",
-                "mockery/mockery": "^1.4.4",
-                "orchestra/testbench-core": "^7.8",
+                "mockery/mockery": "^1.5.1",
+                "orchestra/testbench-core": "^7.11",
                 "pda/pheanstalk": "^4.0",
                 "phpstan/phpstan": "^1.4.7",
                 "phpunit/phpunit": "^9.5.8",
-                "predis/predis": "^1.1.9|^2.0",
+                "predis/predis": "^1.1.9|^2.0.2",
                 "symfony/cache": "^6.0"
             },
             "suggest": {
                 "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
-                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage, and SES mail driver (^3.198.1).",
+                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage, and SES mail driver (^3.235.5).",
                 "brianium/paratest": "Required to run tests in parallel (^6.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.13.3|^3.1.4).",
                 "ext-bcmath": "Required to use the multiple_of validation rule.",
@@ -1336,18 +1336,18 @@
                 "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
                 "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
-                "guzzlehttp/guzzle": "Required to use the HTTP Client and the ping methods on schedules (^7.2).",
+                "guzzlehttp/guzzle": "Required to use the HTTP Client and the ping methods on schedules (^7.5).",
                 "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
                 "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.0).",
                 "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.3).",
                 "league/flysystem-read-only": "Required to use read-only disks (^3.3)",
                 "league/flysystem-sftp-v3": "Required to use the Flysystem SFTP driver (^3.0).",
-                "mockery/mockery": "Required to use mocking (^1.4.4).",
+                "mockery/mockery": "Required to use mocking (^1.5.1).",
                 "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
                 "phpunit/phpunit": "Required to use assertions and run tests (^9.5.8).",
-                "predis/predis": "Required to use the predis connector (^1.1.9|^2.0).",
+                "predis/predis": "Required to use the predis connector (^1.1.9|^2.0.2).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
                 "symfony/cache": "Required to PSR-6 cache bridge (^6.0).",
@@ -1399,7 +1399,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-09-30T12:59:55+00:00"
+            "time": "2022-10-19T13:23:53+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -6856,32 +6856,167 @@
             "time": "2022-06-03T18:03:27+00:00"
         },
         {
-            "name": "wireui/wireui",
-            "version": "v1.16.0",
+            "name": "wireui/heroicons",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wireui/wireui.git",
-                "reference": "bedd671260fbdeb52907c930000e5551220aeb1b"
+                "url": "https://github.com/wireui/heroicons.git",
+                "reference": "4a97cd44db0f206e092c61e4286b393d1979c2f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/bedd671260fbdeb52907c930000e5551220aeb1b",
-                "reference": "bedd671260fbdeb52907c930000e5551220aeb1b",
+                "url": "https://api.github.com/repos/wireui/heroicons/zipball/4a97cd44db0f206e092c61e4286b393d1979c2f7",
+                "reference": "4a97cd44db0f206e092c61e4286b393d1979c2f7",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^8.83|^9.16",
-                "livewire/livewire": "^2.10",
-                "php": "^8.0|^8.1"
+                "laravel/framework": "^9.16",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.11.0",
+                "mockery/mockery": "^1.5",
+                "nunomaduro/larastan": "^2.2.0",
+                "orchestra/testbench": "^7.7.0",
+                "pestphp/pest": "^1.22.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "WireUi\\Heroicons\\HeroiconsServiceProvider"
+                    ]
+                },
+                "aliases": []
+            },
+            "autoload": {
+                "psr-4": {
+                    "WireUi\\Heroicons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PH7-Jack",
+                    "email": "pedrolivertwd@gmail.com"
+                }
+            ],
+            "description": "The Tailwind Heroicons for laravel blade by WireUI",
+            "keywords": [
+                "blade components",
+                "blade heroicons",
+                "laravel components",
+                "livewire icons",
+                "livewire icons components",
+                "wireui"
+            ],
+            "support": {
+                "issues": "https://github.com/wireui/heroicons/issues",
+                "source": "https://github.com/wireui/heroicons/tree/v2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/PH7-Jack",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-15T02:19:25+00:00"
+        },
+        {
+            "name": "wireui/phosphoricons",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wireui/phosphoricons.git",
+                "reference": "3d3f31adbf8fe3359547db1959757e5ca34afcf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wireui/phosphoricons/zipball/3d3f31adbf8fe3359547db1959757e5ca34afcf5",
+                "reference": "3d3f31adbf8fe3359547db1959757e5ca34afcf5",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.19",
+                "php": "^8.1"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.9",
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^6.0|^7.6",
-                "orchestra/testbench-dusk": "^6.0|^7.6",
+                "orchestra/testbench": "^7.6",
+                "pestphp/pest": "^1.21",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "WireUi\\PhosphorIcons\\PhosphorIconsServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WireUi\\PhosphorIcons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PH7-Jack",
+                    "email": "pedrolivertwd@gmail.com"
+                }
+            ],
+            "description": "The phosphoricons made for laravel blade by WireUI",
+            "keywords": [
+                "Blade Icons",
+                "blade components",
+                "blade phosphoricons",
+                "laravel components",
+                "livewire icons",
+                "livewire icons components",
+                "wireui",
+                "wireui phosphoricons"
+            ],
+            "support": {
+                "issues": "https://github.com/wireui/phosphoricons/issues",
+                "source": "https://github.com/wireui/phosphoricons/tree/v1.1.0"
+            },
+            "time": "2022-09-04T06:13:22+00:00"
+        },
+        {
+            "name": "wireui/wireui",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../wireui",
+                "reference": "6f56eb0c5d0946765c5d21c47a739954f6045870"
+            },
+            "require": {
+                "laravel/framework": "^9.19",
+                "livewire/livewire": "^2.10",
+                "php": "^8.1",
+                "wireui/heroicons": "^2.2",
+                "wireui/phosphoricons": "^1.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.0",
+                "orchestra/testbench-dusk": "^7.0",
                 "pestphp/pest": "^1.21",
                 "pestphp/pest-plugin-livewire": "^1.0",
                 "pestphp/pest-plugin-mock": "^1.0",
+                "phpstan/phpstan": "^1.8",
                 "phpunit/phpunit": "^9.5",
                 "psy/psysh": "@stable"
             },
@@ -6889,7 +7024,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "WireUi\\Providers\\WireUiServiceProvider"
+                        "WireUi\\WireUiServiceProvider"
                     ],
                     "aliases": []
                 }
@@ -6899,7 +7034,32 @@
                     "WireUi\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "App\\": "vendor/orchestra/testbench-core/laravel/app",
+                    "Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "./vendor/bin/dusk-updater detect --no-interaction"
+                ],
+                "test": [
+                    "./vendor/bin/pest"
+                ],
+                "test:ci": [
+                    "CI=true ./vendor/bin/pest"
+                ],
+                "pint": [
+                    "./vendor/bin/pint"
+                ],
+                "pint:test": [
+                    "./vendor/bin/pint --test"
+                ],
+                "phpstan": [
+                    "./vendor/bin/phpstan analyse src --level max"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6913,21 +7073,17 @@
             "keywords": [
                 "blade components",
                 "laravel components",
+                "laravel ui",
                 "livewire components",
+                "livewire modal component",
+                "livewire select component",
                 "livewire-ui",
+                "tallstack components",
                 "wireui"
             ],
-            "support": {
-                "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v1.16.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/PH7-Jack",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-10-01T21:24:54+00:00"
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "packages-dev": [
@@ -10332,7 +10488,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wireui/wireui": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

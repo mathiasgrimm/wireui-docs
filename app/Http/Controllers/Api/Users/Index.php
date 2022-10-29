@@ -14,7 +14,7 @@ class Index extends Controller
     {
         return User::query()
             ->select('id', 'name', 'email')
-            ->orderBy('name')
+            ->orderBy('id')
             ->when(
                 $request->search,
                 fn (Builder $query) => $query

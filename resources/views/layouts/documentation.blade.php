@@ -16,7 +16,7 @@
                     x-on:click="openSidebar"
                     type="button">
                     <span class="sr-only">Open sidebar</span>
-                    <x-icon name="menu" class="h-6 w-6" />
+                    <x-icons.heroicons name="bars-3" class="h-6 w-6" />
                 </button>
 
                 <a href="{{ route('home') }}" class="font-extrabold text-teal-600 text-xl">
@@ -66,7 +66,7 @@
                     x-transition:leave-end="opacity-0">
                     <button class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span class="sr-only">Close sidebar</span>
-                        <x-icon name="x" class="h-6 w-6 text-white" />
+                        <x-icons.heroicons name="x-mark" class="h-6 w-6 text-white" />
                     </button>
                 </div>
 

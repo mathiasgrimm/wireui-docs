@@ -86,7 +86,11 @@
             <x-button outline warning label="Warning" />
             <x-button outline info label="Info" />
             <x-button outline dark label="Dark" />
-            <x-button outline white label="White" />
+
+            <div class="p-2 bg-black">
+                <x-button outline white block label="White" />
+            </div>
+
             <x-button outline black label="Black" />
             <x-button outline slate label="Slate" />
             <x-button outline gray label="Gray" />
@@ -127,7 +131,9 @@
             <x-button flat warning label="Warning" />
             <x-button flat info label="Info" />
             <x-button flat dark label="Dark" />
-            <x-button flat white label="White" />
+            <div class="p-2 bg-black">
+                <x-button flat white block label="White" />
+            </div>
             <x-button flat black label="Black" />
             <x-button flat slate label="Slate" />
             <x-button flat gray label="Gray" />
@@ -150,6 +156,21 @@
             <x-button flat fuchsia label="Fuchsia" />
             <x-button flat pink label="Pink" />
             <x-button flat rose label="Rose" />
+        </div>
+    </x-code-preview>
+
+    <x-code-preview
+        title="State Colors"
+        href="#state-colors"
+        id="state-colors"
+        language="html"
+        :code="$outlineColorsCode">
+        <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
+            <x-button label="Delete" right-icon="trash" flat gray interaction:negative />
+
+            <x-button label="Save" right-icon="check" flat primary hover:emerald focus:teal />
+
+            <x-button label="Discard" flat gray interaction:warning />
         </div>
     </x-code-preview>
 
@@ -181,7 +202,9 @@
             <x-button squared label="No Color" />
             <x-button squared primary label="Primary" />
             <x-button squared secondary label="Secondary" />
+
             <x-button squared positive label="Positive" />
+
             <x-button squared negative label="Negative" />
             <x-button squared warning label="Warning" />
             <x-button squared info label="Info" />
@@ -196,18 +219,18 @@
         language="html"
         :code="$circleButtonsCode">
         <div class="flex flex-wrap gap-3">
-            <x-button.circle icon="home" />
-            <x-button.circle primary icon="pencil" />
-            <x-button.circle secondary icon="clipboard-list"  />
-            <x-button.circle positive icon="check" />
-            <x-button.circle negative icon="x" />
-            <x-button.circle warning icon="exclamation" />
-            <x-button.circle info icon="information-circle" />
-            <x-button.circle dark icon="ban" />
-            <x-button.circle secondary label="A"  />
-            <x-button.circle positive label="B" />
-            <x-button.circle negative label="C" />
-            <x-button.circle primary label="+" />
+            <x-buttons.mini rounded icon="house" />
+            <x-buttons.mini rounded primary icon="pencil" />
+            <x-buttons.mini rounded secondary icon="clipboard-text"  />
+            <x-buttons.mini rounded positive icon="check" />
+            <x-buttons.mini rounded negative icon="x" />
+            <x-buttons.mini rounded warning icon="warning" />
+            <x-buttons.mini rounded info icon="info" />
+            <x-buttons.mini rounded dark icon="prohibit" />
+            <x-buttons.mini rounded secondary label="A"  />
+            <x-buttons.mini rounded positive label="B" />
+            <x-buttons.mini rounded negative label="C" />
+            <x-buttons.mini rounded primary label="+" />
         </div>
     </x-code-preview>
 
@@ -218,14 +241,14 @@
         language="html"
         :code="$buttonIconsCode">
         <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4">
-            <x-button icon="home" label="Default" />
+            <x-button icon="house" label="Default" />
             <x-button icon="pencil" primary label="Primary" />
-            <x-button icon="clipboard-list" secondary label="Secondary" />
+            <x-button icon="clipboard-text" secondary label="Secondary" />
             <x-button icon="check" positive label="Positive" />
             <x-button icon="x" negative label="Negative" />
-            <x-button icon="exclamation" warning label="Warning" />
-            <x-button right-icon="information-circle" info label="Info" />
-            <x-button right-icon="ban" dark label="Dark" />
+            <x-button icon="warning" warning label="Warning" />
+            <x-button right-icon="info" info label="Info" />
+            <x-button right-icon="prohibit" dark label="Dark" />
         </div>
     </x-code-preview>
 
@@ -236,13 +259,33 @@
         language="html"
         :code="$buttonSizesCode">
         <div class="space-x-2 space-y-2">
-            <x-button 2xs secondary label="2xs size" />
-            <x-button xs  primary   label="xs size" />
-            <x-button sm  positive  label="sm size" />
-            <x-button     negative  label="default size" />
-            <x-button md  warning   label="md size" />
-            <x-button lg  stone     label="lg size" />
-            <x-button xl  dark      label="xl size" />
+            <x-button 2xs secondary label="2xs button" />
+            <x-button xs  primary   label="xs button" />
+            <x-button sm  positive  label="sm button" />
+            <x-button md  negative  label="md button" />
+            <x-button lg  warning   label="lg button" />
+            <x-button xl  stone     label="xl button" />
+            <x-button 2xl  dark     label="2xl button" />
+        </div>
+
+        <div class="space-x-2 space-y-2">
+            <x-button 2xs secondary label="2xs" icon="pencil" />
+            <x-button xs  primary   label="xs" icon="clipboard-text" />
+            <x-button sm  positive  label="sm" icon="check" />
+            <x-button md  negative  label="md" icon="trash" />
+            <x-button lg  warning   label="lg button" icon="warning" />
+            <x-button xl  stone     label="xl button" icon="info" />
+            <x-button 2xl  dark     label="2xl button" icon="prohibit" />
+        </div>
+
+        <div class="space-x-2 space-y-2">
+            <x-buttons.mini rounded 2xs primary icon="pencil" />
+            <x-buttons.mini rounded xs secondary icon="clipboard-text"  />
+            <x-buttons.mini rounded sm positive icon="check" />
+            <x-buttons.mini rounded md negative icon="trash" />
+            <x-buttons.mini rounded lg warning icon="warning" />
+            <x-buttons.mini rounded xl info icon="info" />
+            <x-buttons.mini rounded 2xl dark icon="prohibit" />
         </div>
     </x-code-preview>
 
@@ -254,7 +297,7 @@
         :code="$buttonLinkCode">
         <div>
             <x-button
-                href="https://google.com"
+                href="https://google.com?ref={{ config('app.url') }}"
                 target="_blank"
                 label="Go to Google"
                 teal
@@ -275,7 +318,34 @@
         language="html"
         :code="$loadingSpinnerCode">
         <div class="flex flex-wrap items-center gap-4">
-            <x-button.circle wire:click="$refresh" teal icon="check" spinner />
+
+            <x-buttons.mini rounded primary>
+                <x-phosphor.icons::regular.circle-notch class="animate-spin w-5 h-5" />
+            </x-buttons.mini>
+
+            <x-buttons.mini rounded primary>
+                <svg class="animate-spin w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </x-buttons.mini>
+
+            <x-button primary>
+                <x-phosphor.icons::regular.spinner-gap class="animate-spin w-5 h-5" />
+                <x-phosphor.icons::regular.circle-notch class="animate-spin w-5 h-5" />
+                <svg class="animate-spin w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </x-button>
+
+            <x-buttons.mini rounded wire:click="$refresh" teal icon="check" spinner />
 
             <x-button wire:click="$refresh" spinner primary label="Save without target" />
 
@@ -283,13 +353,63 @@
 
             <x-button wire:click="sleeping" spinner="sleeping" loading-delay="short" primary label="Save with target + delay indicator" />
         </div>
+
+        <br>
+
+        <div>
+            <x-button
+                label="Delete"
+                icon="trash"
+                gray flat
+
+                {{-- interaction:negative --}}
+                interaction="negative"
+
+                {{-- hover:negative
+                focus:negative --}}
+
+                {{-- focus:primary --}}
+            />
+
+            <x-button
+                label="Delete"
+                icon="trash"
+                gray flat
+                hover:negative
+                focus:primary
+            />
+
+            <x-button
+                label="Delete"
+                icon="trash"
+                gray outline
+                hover:negative
+                focus:primary
+            />
+
+            <x-button
+                label="Delete"
+                icon="trash"
+                gray flat
+                hover:negative
+                focus:primary
+            />
+
+            <x-button
+                label="Delete"
+                icon="trash"
+                gray
+                hover:negative
+                focus:primary
+            />
+        </div>
     </x-code-preview>
 
     <div class="flex items-center gap-x-3 rounded-lg border dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700 p-4">
-        <x-icon name="exclamation" class="h-5 w-5 shrink-0 text-yellow-400" />
+        <x-icon name="warning" class="h-5 w-5 shrink-0 text-yellow-400" />
 
         <p class="text-sm text-yellow-700 dark:text-yellow-400">
-            The attributes [squared, rounded, right-icon] are not supported in <b>button.circle</b> component
+            The attributes [squared, rounded, right-icon] are not supported in <b>buttons.mini rounded</b> component
         </p>
     </div>
 
@@ -352,5 +472,5 @@
         </x-options-table>
     </div>
 
-    <livewire:docs.buttons.playground />
+    {{-- <livewire:docs.buttons.playground /> --}}
 </div>
