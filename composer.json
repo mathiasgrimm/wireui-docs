@@ -20,7 +20,7 @@
         "livewire/livewire": "^2.10",
         "sentry/sentry-laravel": "^2.13",
         "torchlight/torchlight-laravel": "^0.5.11",
-        "wireui/wireui": "^1.17"
+        "wireui/wireui": "2.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.20",
@@ -78,5 +78,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "wireui/wireui": {
+            "type": "path",
+            "url": "../wireui"
+        }
+    }
 }
