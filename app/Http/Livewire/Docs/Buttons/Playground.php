@@ -48,7 +48,7 @@ class Playground extends Component
 
     public function getIconsProperty(): Collection
     {
-        $path = base_path('vendor/wireui/wireui/resources/views/components/icons/outline');
+        $path = base_path('vendor/wireui/heroicons/src/views/components/outline');
 
         return collect(File::files($path))
             ->map(function (SplFileInfo $file) {

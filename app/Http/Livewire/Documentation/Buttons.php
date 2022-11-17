@@ -134,12 +134,12 @@ class Buttons extends Component
     public string $circleButtonsCode = <<<HTML
     <x-button.circle icon="home" />
     <x-button.circle primary icon="pencil" />
-    <x-button.circle secondary icon="clipboard-list"  />
+    <x-button.circle secondary icon="clipboard-document-list"  />
     <x-button.circle positive icon="check" />
-    <x-button.circle negative icon="x" />
-    <x-button.circle warning icon="exclamation" />
+    <x-button.circle negative icon="x-mark" />
+    <x-button.circle warning icon="exclamation-triangle" />
     <x-button.circle info icon="information-circle" />
-    <x-button.circle dark icon="ban" />
+    <x-button.circle dark icon="no-symbol" />
     <x-button.circle secondary label="A"  />
     <x-button.circle positive label="B" />
     <x-button.circle negative label="C" />
@@ -149,20 +149,20 @@ class Buttons extends Component
     public string $buttonIconsCode = <<<HTML
     <x-button icon="home" label="Default" />
     <x-button icon="pencil" primary label="Primary" />
-    <x-button icon="clipboard-list" secondary label="Secondary" />
+    <x-button icon="clipboard-document-list" secondary label="Secondary" />
     <x-button icon="check" positive label="Positive" />
-    <x-button icon="x" negative label="Negative" />
-    <x-button icon="exclamation" warning label="Warning" />
+    <x-button icon="x-mark" negative label="Negative" />
+    <x-button icon="exclamation-triangle" warning label="Warning" />
     <x-button right-icon="information-circle" info label="Info" />
-    <x-button right-icon="ban" dark label="Dark" />
+    <x-button right-icon="no-symbol" dark label="Dark" />
     HTML;
 
     public string $buttonSizesCode = <<<HTML
     <x-button xs icon="pencil" primary label="Extra Small Button" />
     <x-button sm icon="users" dark label="Small Button" />
-    <x-button icon="clipboard-list" secondary label="Normal" />
+    <x-button icon="clipboard-document-list" secondary label="Normal" />
     <x-button md icon="check" positive label="Medium Button" />
-    <x-button lg icon="x" negative label="Large Button" />
+    <x-button lg icon="x-mark" negative label="Large Button" />
     HTML;
 
     public string $buttonLinkCode = <<<HTML

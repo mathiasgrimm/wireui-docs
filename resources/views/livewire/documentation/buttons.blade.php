@@ -198,12 +198,12 @@
         <div class="flex flex-wrap gap-3">
             <x-button.circle icon="home" />
             <x-button.circle primary icon="pencil" />
-            <x-button.circle secondary icon="clipboard-list"  />
+            <x-button.circle secondary icon="clipboard-document-list"  />
             <x-button.circle positive icon="check" />
-            <x-button.circle negative icon="x" />
-            <x-button.circle warning icon="exclamation" />
+            <x-button.circle negative icon="x-mark" />
+            <x-button.circle warning icon="exclamation-triangle" />
             <x-button.circle info icon="information-circle" />
-            <x-button.circle dark icon="ban" />
+            <x-button.circle dark icon="no-symbol" />
             <x-button.circle secondary label="A"  />
             <x-button.circle positive label="B" />
             <x-button.circle negative label="C" />
@@ -220,12 +220,12 @@
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-6">
             <x-button icon="home" label="Default" />
             <x-button icon="pencil" primary label="Primary" />
-            <x-button icon="clipboard-list" secondary label="Secondary" />
+            <x-button icon="clipboard-document-list" secondary label="Secondary" />
             <x-button icon="check" positive label="Positive" />
-            <x-button icon="x" negative label="Negative" />
-            <x-button icon="exclamation" warning label="Warning" />
+            <x-button icon="x-mark" negative label="Negative" />
+            <x-button icon="exclamation-triangle" warning label="Warning" />
             <x-button right-icon="information-circle" info label="Info" />
-            <x-button right-icon="ban" dark label="Dark" />
+            <x-button right-icon="no-symbol" dark label="Dark" />
         </div>
     </x-code-preview>
 
@@ -286,7 +286,7 @@
     </x-code-preview>
 
     <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700">
-        <x-icon name="exclamation" class="w-5 h-5 text-yellow-400 shrink-0" />
+        <x-icon name="exclamation-triangle" class="w-5 h-5 text-yellow-400 shrink-0" />
 
         <p class="text-sm text-yellow-700 dark:text-yellow-400">
             The attributes [squared, rounded, right-icon] are not supported in <b>button.circle</b> component

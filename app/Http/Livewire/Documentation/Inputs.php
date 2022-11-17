@@ -49,7 +49,7 @@ class Inputs extends Component
             <div class="absolute inset-y-0 left-0 flex items-center p-0.5">
                 <x-button
                     class="h-full rounded-l-md"
-                    icon="sort-ascending"
+                    icon="bars-arrow-up"
                     primary
                     flat
                     squared
@@ -65,7 +65,7 @@ class Inputs extends Component
             <div class="absolute inset-y-0 right-0 flex items-center p-0.5">
                 <x-button
                     class="h-full rounded-r-md"
-                    icon="sort-ascending"
+                    icon="bars-arrow-up"
                     primary
                     flat
                     squared

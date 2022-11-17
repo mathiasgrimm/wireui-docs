@@ -37,7 +37,7 @@
                 }"
                 type="button"
                 x-on:click="showCode = true">
-                <x-icon name="code" class="w-5 h-5 mr-1" />
+                <x-icon name="code-bracket" class="w-5 h-5 mr-1" />
                 <span :class="{ 'hidden sm:flex': !showCode, 'pr-0.5': showCode }">
                     Code
                 </span>
