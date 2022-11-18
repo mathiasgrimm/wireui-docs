@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'heroicons' => 'https://v1.heroicons.com',
+    'heroicons' => 'https://heroicons.com',
     'wireui'    => 'https://github.com/wireui/wireui',
 ];
