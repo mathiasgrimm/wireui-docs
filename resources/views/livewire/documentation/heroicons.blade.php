@@ -14,23 +14,45 @@
         </p>
 
         <x-code language="html" :contents='<<<EOT
-        <x-icon name="home" class="w-5 h-5" />
-        <x-icon name="home" class="w-5 h-5" solid />
+            <x-icon name="home" class="w-5 h-5" />
+            <x-icon name="home" class="w-5 h-5" mini />
+            <x-icon name="home" class="w-5 h-5" solid />
+            <x-icon name="home" class="w-5 h-5" outline />
+
+            <x-heroicons::outline.user />
+            <x-heroicons::solid.user />
+            <x-heroicons::mini.solid.user class="w-5 h-5" />
         EOT' />
 
-        <p>You can publish the icon configuration and define what will be the default style</p>
-        <x-code :line-numbers="false" language="bash" contents="php artisan vendor:publish --tag='wireui.config'" />
-
-        <p>Or use an environment variable for that</p>
-        <x-code language="bash" contents="WIREUI_ICONS_STYLE=solid" />
-        <br/>
+        <p>You can publish the icon configuration and define what will be the default variant</p>
+        <x-code :line-numbers="false" language="bash">
+            php artisan vendor:publish --tag="wireui.config"
+        </x-code>
     </div>
+
+    <div>
+        <x-section.title id="playground" href="playground" title="Playground" />
+
+        <div class="rounded-xl overflow-hidden shadow border mt-6">
+            <iframe
+                src="https://heroicons.com"
+                allow="clipboard-write"
+                width="100%"
+                height="374px"
+                frameborder="0">
+            </iframe>
+        </div>
+    </div>
+
+    <br />
+    <br />
 
     <x-section.title id="options" href="options" title="Options" />
 
     <x-options-table class="mt-10">
-        <x-option-table-row prop="name"    required="true"  default="none"    type="string" available="all heroicons" />
-        <x-option-table-row prop="style"   required="false" default="outline" type="string" available="outline|solid" />
+        <x-option-table-row prop="name"    required="true"  default="none"    type="string"  available="all heroicons" />
+        <x-option-table-row prop="variant" required="false" default="outline" type="string"  available="outline|solid|mini" />
+        <x-option-table-row prop="mini"    required="false" default="false"   type="boolean" available="true|false" />
         <x-option-table-row prop="solid"   required="false" default="false"   type="boolean" available="true|false" />
         <x-option-table-row prop="outline" required="false" default="false"   type="boolean" available="true|false" />
     </x-options-table>
