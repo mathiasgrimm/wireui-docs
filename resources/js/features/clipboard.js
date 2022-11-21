@@ -34,3 +34,18 @@ clipboard.on('success', (element) => {
     btn.innerHTML = 'copy'
   }, 1000)
 })
+
+window.$clipboard = text => {
+  navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
+    if (!['granted', 'prompt'].includes(result.state)) return
+
+    navigator.clipboard.writeText(text).then(() => {
+      window.$wireui.notify({
+        title: 'Copied to Clipboard',
+        message: text,
+        icon: 'success',
+        timeout: 1000
+      })
+    })
+  })
+}
