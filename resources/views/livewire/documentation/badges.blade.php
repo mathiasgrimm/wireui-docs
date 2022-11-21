@@ -196,12 +196,12 @@
         <div class="flex flex-wrap gap-3">
             <x-badge.circle icon="home" />
             <x-badge.circle primary icon="pencil" />
-            <x-badge.circle secondary icon="clipboard-list"  />
+            <x-badge.circle secondary icon="clipboard-document-list"  />
             <x-badge.circle positive icon="check" />
-            <x-badge.circle negative icon="x" />
-            <x-badge.circle warning icon="exclamation" />
+            <x-badge.circle negative icon="x-mark" />
+            <x-badge.circle warning icon="exclamation-triangle" />
             <x-badge.circle info icon="information-circle" />
-            <x-badge.circle dark icon="ban" />
+            <x-badge.circle dark icon="no-symbol" />
             <x-badge.circle secondary label="A"  />
             <x-badge.circle positive label="B" />
             <x-badge.circle negative label="C" />
@@ -218,12 +218,12 @@
         <div class="flex flex-wrap gap-3">
             <x-badge icon="home" label="Default" />
             <x-badge icon="pencil" primary label="Primary" />
-            <x-badge icon="clipboard-list" secondary label="Secondary" />
+            <x-badge icon="clipboard-document-list" secondary label="Secondary" />
             <x-badge icon="check" positive label="Positive" />
-            <x-badge icon="x" negative label="Negative" />
-            <x-badge icon="exclamation" warning label="Warning" />
+            <x-badge icon="x-mark" negative label="Negative" />
+            <x-badge icon="exclamation-triangle" warning label="Warning" />
             <x-badge right-icon="information-circle" info label="Info" />
-            <x-badge right-icon="ban" dark label="Dark" />
+            <x-badge right-icon="no-symbol" dark label="Dark" />
         </div>
     </x-code-preview>
 
@@ -234,9 +234,9 @@
         language="html"
         :code="$badgeSizesCode">
         <div class="flex flex-wrap items-center gap-3">
-            <x-badge icon="clipboard-list" secondary label="default size" />
-            <x-badge md icon="clipboard-list" positive label="md size" />
-            <x-badge lg icon="clipboard-list" negative label="lg size" />
+            <x-badge icon="clipboard-document-list" secondary label="default size" />
+            <x-badge md icon="clipboard-document-list" positive label="md size" />
+            <x-badge lg icon="clipboard-document-list" negative label="lg size" />
         </div>
     </x-code-preview>
 
@@ -264,7 +264,7 @@
             <x-badge flat red label="Laravel">
                 <x-slot name="append" class="relative flex items-center w-2 h-2">
                     <button type="button">
-                        <x-icon name="x" class="w-4 h-4" />
+                        <x-icon name="x-mark" class="w-4 h-4" />
                     </button>
                 </x-slot>
             </x-badge>
@@ -272,7 +272,7 @@
     </x-code-preview>
 
     <div class="flex items-center p-4 border rounded-lg gap-x-3 dark:border-0 shadow-soft bg-yellow-50 dark:bg-secondary-700">
-        <x-icon name="exclamation" class="w-5 h-5 text-yellow-400 shrink-0" />
+        <x-icon name="exclamation-triangle" class="w-5 h-5 text-yellow-400 shrink-0" />
 
         <p class="text-sm text-yellow-700 dark:text-yellow-400">
             The attributes [squared, rounded, full, right-icon, prepend, append] are not supported in <b>badge.circle</b> component

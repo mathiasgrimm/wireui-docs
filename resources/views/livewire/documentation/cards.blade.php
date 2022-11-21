@@ -61,7 +61,7 @@
             <x-card title="Lorem Ipsum is simply!">
                 <x-slot name="action">
                     <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
-                        <x-icon name="dots-vertical" class="w-4 h-4 text-gray-500" />
+                        <x-icon name="ellipsis-vertical" class="w-4 h-4 text-gray-500" />
                     </button>
                 </x-slot>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
@@ -79,7 +79,7 @@
             <x-card title="Lorem Ipsum is simply!">
                 <x-slot name="action">
                     <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
-                        <x-icon name="dots-vertical" class="w-4 h-4 text-gray-500" />
+                        <x-icon name="ellipsis-vertical" class="w-4 h-4 text-gray-500" />
                     </button>
                 </x-slot>
                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book

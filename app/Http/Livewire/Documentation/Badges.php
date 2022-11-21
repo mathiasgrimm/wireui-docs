@@ -134,12 +134,12 @@ class Badges extends Component
     public string $circleBadgesCode = <<<HTML
     <x-badge.circle icon="home" />
     <x-badge.circle primary icon="pencil" />
-    <x-badge.circle secondary icon="clipboard-list"  />
+    <x-badge.circle secondary icon="clipboard-document-list"  />
     <x-badge.circle positive icon="check" />
-    <x-badge.circle negative icon="x" />
-    <x-badge.circle warning icon="exclamation" />
+    <x-badge.circle negative icon="x-mark" />
+    <x-badge.circle warning icon="exclamation-triangle" />
     <x-badge.circle info icon="information-circle" />
-    <x-badge.circle dark icon="ban" />
+    <x-badge.circle dark icon="no-symbol" />
     <x-badge.circle secondary label="A"  />
     <x-badge.circle positive label="B" />
     <x-badge.circle negative label="C" />
@@ -149,18 +149,18 @@ class Badges extends Component
     public string $badgeIconsCode = <<<HTML
     <x-badge icon="home" label="Default" />
     <x-badge icon="pencil" primary label="Primary" />
-    <x-badge icon="clipboard-list" secondary label="Secondary" />
+    <x-badge icon="clipboard-document-list" secondary label="Secondary" />
     <x-badge icon="check" positive label="Positive" />
-    <x-badge icon="x" negative label="Negative" />
-    <x-badge icon="exclamation" warning label="Warning" />
+    <x-badge icon="x-mark" negative label="Negative" />
+    <x-badge icon="exclamation-triangle" warning label="Warning" />
     <x-badge right-icon="information-circle" info label="Info" />
-    <x-badge right-icon="ban" dark label="Dark" />
+    <x-badge right-icon="no-symbol" dark label="Dark" />
     HTML;
 
     public string $badgeSizesCode = <<<HTML
-    <x-badge icon="clipboard-list" secondary label="default size" />
-    <x-badge md icon="clipboard-list" positive label="md size" />
-    <x-badge lg icon="clipboard-list" negative label="lg size" />
+    <x-badge icon="clipboard-document-list" secondary label="default size" />
+    <x-badge md icon="clipboard-document-list" positive label="md size" />
+    <x-badge lg icon="clipboard-document-list" negative label="lg size" />
     HTML;
 
     public string $badgePrependAppendCode = <<<HTML
@@ -181,7 +181,7 @@ class Badges extends Component
     <x-badge flat red label="Laravel">
         <x-slot name="append" class="relative flex items-center w-2 h-2">
             <button type="button">
-                <x-icon name="x" class="w-4 h-4" />
+                <x-icon name="x-mark" class="w-4 h-4" />
             </button>
         </x-slot>
     </x-badge>

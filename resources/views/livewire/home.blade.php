@@ -37,7 +37,7 @@
                                 x-on:click="mobileDropdown = true"
                                 type="button">
                                 <span class="sr-only">Open main menu</span>
-                                <x-icon name="menu" class="w-6 h-6" />
+                                <x-icon name="bars-3" class="w-6 h-6" />
                             </button>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                                 x-on:click="mobileDropdown = false"
                                 type="button">
                             <span class="sr-only">Close main menu</span>
-                            <x-icon name="x" class="w-6 h-6" />
+                            <x-icon name="x-mark" class="w-6 h-6" />
                         </button>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <div class="-mt-6">
                                 <div>
                                     <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                                        <x-icon name="chip" class="w-6 h-6 text-white" />
+                                        <x-icon name="cpu-chip" class="w-6 h-6 text-white" />
                                     </span>
                                 </div>
                                 <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Heroicons</h3>
@@ -167,7 +167,7 @@
                             <div class="-mt-6">
                                 <div>
                                     <span class="inline-flex items-center justify-center p-3 bg-teal-500 rounded-md shadow-lg">
-                                        <x-icon name="code" class="w-6 h-6 text-white" />
+                                        <x-icon name="code-bracket" class="w-6 h-6 text-white" />
                                     </span>
                                 </div>
                                 <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Blade Components</h3>

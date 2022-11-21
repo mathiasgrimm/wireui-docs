@@ -85,7 +85,7 @@
 
                 <div class="col-span-1 sm:col-span-2 cursor-pointer bg-gray-100 dark:bg-secondary-700 rounded-xl shadow-md h-72 flex items-center justify-center">
                     <div class="flex flex-col items-center justify-center">
-                        <x-icon name="cloud-upload" class="w-16 h-16 text-blue-600 dark:text-teal-600" />
+                        <x-icon name="cloud-arrow-up" class="w-16 h-16 text-blue-600 dark:text-teal-600" />
                         <p class="text-blue-600 dark:text-teal-600">Click or drop files here</p>
                     </div>
                 </div>

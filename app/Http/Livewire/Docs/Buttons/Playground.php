@@ -2,14 +2,14 @@
 
 namespace App\Http\Livewire\Docs\Buttons;
 
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\{Collection, Str};
+use App\Traits\Livewire\HasHeroicons;
 use Livewire\Component;
-use Symfony\Component\Finder\SplFileInfo;
 
 /** @property-read string $buttonCode */
 class Playground extends Component
 {
+    use HasHeroicons;
+
     public ?string $label = 'Button';
 
     public string $style = 'default';
@@ -46,15 +46,7 @@ class Playground extends Component
         return "<x-button {$attributes} />";
     }
 
-    public function getIconsProperty(): Collection
-    {
-        $path = base_path('vendor/wireui/wireui/resources/views/components/icons/outline');
 
-        return collect(File::files($path))
-            ->map(function (SplFileInfo $file) {
-                return Str::before($file->getFilename(), '.blade.php');
-            })->sortBy('name');
-    }
 
     public function render()
     {
