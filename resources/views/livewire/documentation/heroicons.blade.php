@@ -3,6 +3,7 @@
         <x-summary>
             <x-summary.header href="#heroicons" label="Heroicons" />
             <x-summary.header href="#options" label="Options" />
+            <x-summary.header href="#playground" label="Playground" />
         </x-summary>
     </x-slot>
 
@@ -31,7 +32,7 @@
     </div>
 
     <div class="pb-10 space-y-6">
-        <x-section.title id="playground" href="playground" title="Playground" />
+        <x-section.title id="playground" href="playground" title="🪁 Playground" />
 
         <livewire:docs.icons.playground />
     </div>
