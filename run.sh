@@ -53,9 +53,9 @@ composerInstall () {
 compileAssets () {
     echo -e "${LABEL_WIREUI}Compiling assets..."
 
-    yarn install
+    yarn
 
-    yarn run prod
+    yarn dev
 
     if [ ! $? -eq 0 ]; then
         echo -e "${LABEL_ERROR}Error compiling assets..."
@@ -102,9 +102,9 @@ TorchlightToken(){
 
 serveProject(){
   echo -e "${LABEL_WIREUI}Would you like to start the ${YELLOW}Artisan Server${NC} [y/N]?"
-  read ANSWER 
+  read ANSWER
 
-  if [ "$ANSWER" != "${ANSWER#[Yy]}" ]; then 
+  if [ "$ANSWER" != "${ANSWER#[Yy]}" ]; then
     php artisan serve
   fi
 }

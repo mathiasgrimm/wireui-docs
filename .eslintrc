@@ -7,19 +7,28 @@
         "allowImportExportEverywhere": true
     },
     "ignorePatterns": ["node_modules/*", "public/dist/*", "vendor/*"],
-    "env": { "browser": true, "es6": true, "node": true },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
     "rules": {
         "generator-star-spacing": "off",
         "arrow-parens": "off",
         "one-var": "off",
         "no-console": "warn",
         "no-debugger": "warn",
-
         // Possible Errors
-        "no-extra-parens": ["error", "all", { "returnAssign": false }],
+        "no-extra-parens": [
+            "error",
+            "all",
+            {
+                "returnAssign": false
+            }
+        ],
         "import/first": "off",
         "import/named": "error",
-        "import/namespace": "error",
+        // "import/namespace": "error",
         "import/default": "error",
         "import/export": "error",
         "import/extensions": "off",
@@ -27,26 +36,37 @@
         "import/no-extraneous-dependencies": "off",
         "prefer-promise-reject-errors": "off",
         "template-curly-spacing": "off",
-
         // Best Practices
         "eqeqeq": "error",
         "no-invalid-this": "error",
         "no-return-assign": ["error", "except-parens"],
-        "no-unused-expressions": ["error", { "allowTernary": true }],
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowTernary": true
+            }
+        ],
         "no-useless-concat": "error",
         "no-useless-return": "error",
-
         // Variable
         "init-declarations": "error",
         "no-use-before-define": "error",
-
         // Stylistic Issues
         "array-bracket-newline": [
             "error",
-            { "multiline": true, "minItems": null }
+            {
+                "multiline": true,
+                "minItems": null
+            }
         ],
         "array-bracket-spacing": "error",
-        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
         "block-spacing": "error",
         "comma-dangle": "error",
         "comma-spacing": "error",
@@ -58,14 +78,22 @@
         "keyword-spacing": "error",
         "no-lonely-if": "error",
         "no-mixed-operators": "error",
-        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ],
         "no-tabs": "error",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
         "nonblock-statement-body-position": "error",
         "object-property-newline": [
             "error",
-            { "allowAllPropertiesOnSameLine": true }
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
         ],
         "quote-props": ["error", "consistent"],
         "quotes": ["error", "single"],
@@ -78,9 +106,12 @@
         "space-unary-ops": "error",
         "padding-line-between-statements": [
             "error",
-            { "blankLine": "always", "prev": "*", "next": "return" }
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            }
         ],
-
         // ES6
         "arrow-spacing": "error",
         "no-confusing-arrow": "error",
