@@ -30,22 +30,11 @@
         </x-code>
     </div>
 
-    <div>
+    <div class="pb-10 space-y-6">
         <x-section.title id="playground" href="playground" title="Playground" />
 
-        <div class="rounded-xl overflow-hidden shadow border mt-6">
-            <iframe
-                src="https://heroicons.com"
-                allow="clipboard-write"
-                width="100%"
-                height="374px"
-                frameborder="0">
-            </iframe>
-        </div>
+        <livewire:docs.icons.playground />
     </div>
-
-    <br />
-    <br />
 
     <x-section.title id="options" href="options" title="Options" />
 
