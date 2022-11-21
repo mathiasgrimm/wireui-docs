@@ -19,7 +19,7 @@
 
     <x-input type="search" placeholder="Search" wire:model.debounce="search" />
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-5 gap-4 p-2 mt-6 overflow-y-auto soft-scrollbar max-h-96" x-data>
+    <div class="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-5 gap-4 p-2 mt-6 overflow-y-auto soft-scrollbar max-h-96">
         @forelse ($this->icons as $icon)
             <div wire:key="icons.{{ $this->variant }}.{{ $icon }}" class="group">
                 <div class="relative h-[8.5rem]">
@@ -33,7 +33,7 @@
                             dark:border-slate-600 dark:group-hover:bg-slate-600 dark:group-hover:text-slate-400
                             dark:focus:ring-slate-600 dark:focus:ring-offset-slate-800
                         "
-                        x-on:click="$clipboard('{{ $this->makeCopyCode($icon) }}')"
+                        onclick="$clipboard('{{ $this->makeCopyCode($icon) }}')"
                         type="button"
                     >
                         <span class="transition-transform duration-500 ease-in-out">
