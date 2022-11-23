@@ -10,7 +10,7 @@ export default defineConfig({
     mkcert(),
     laravel({
       input: [
-        'resources/css/app.css',
+        'resources/scss/app.scss',
         'resources/js/app.js',
         'resources/js/alpine.js'
       ],
