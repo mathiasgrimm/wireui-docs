@@ -13,11 +13,11 @@
 
     <!-- Styles -->
     <livewire:styles />
-    <link rel="stylesheet" href="{{ mix('dist/app.css') }}">
+    @vite('resources/scss/app.scss')
 
     <!-- Scripts -->
     <wireui:scripts />
-    <script src="{{ mix('dist/alpine.js') }}" defer></script>
+    @vite('resources/js/alpine.js')
 
     <style>
         [x-cloak] {
@@ -36,7 +36,7 @@
 
     <!-- Scripts -->
     <livewire:scripts />
-    <script src="{{ mix('dist/app.js') }}"></script>
+    @vite('resources/js/app.js')
     @stack('scripts')
 </body>
 </html>
