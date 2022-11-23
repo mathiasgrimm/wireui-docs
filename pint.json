@@ -31,7 +31,6 @@
                 "throw",
                 "try",
                 "while",
-                "yield",
                 "yield_from"
             ]
         },
