@@ -15,4 +15,3 @@ test('Routes: "UI Components"', function ($route) {
     yield 'docs.cards';
     yield 'docs.modal';
 });
-

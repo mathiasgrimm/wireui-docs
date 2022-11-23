@@ -46,8 +46,6 @@ class Playground extends Component
         return "<x-button {$attributes} />";
     }
 
-
-
     public function render()
     {
         return view('livewire.docs.buttons.playground');
