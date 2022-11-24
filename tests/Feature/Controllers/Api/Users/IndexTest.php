@@ -3,12 +3,12 @@
 namespace Tests\Feature\Controllers\Api\Users;
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class IndexTest extends TestCase
 {
-    use LazilyRefreshDatabase;
+    use RefreshDatabase;
 
     /** @test **/
     public function it_should_search_for_users()
