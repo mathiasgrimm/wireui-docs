@@ -78,11 +78,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": {
-        "wireui/wireui": {
-            "type": "path",
-            "url": "../wireui"
-        }
-    }
+    "prefer-stable": true
 }
