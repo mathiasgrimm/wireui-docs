@@ -12,7 +12,6 @@ test('Routes: "Getting Started" ', function ($route) {
 })->with(function () {
     yield 'docs.index';
     yield 'docs.get-started';
-    yield 'docs.changelog';
     yield 'docs.colors';
     yield 'docs.customization';
     yield 'docs.contributing';
